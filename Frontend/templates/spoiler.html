@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <script type="text/javascript" src="{{ url_for('static', filename = 'spoiler.js') }}"></script>
+
+    <div id="streaming_switch">
+        <button id="switch_button">Start Streaming</button>
+    </div>
+
+    <div class="row">
+        <div class="col-6 title">All Tweets</div>
+        <div class="col-6 title">Filtered Tweets</div>
+    </div>
+
+    <div class="row">
+        <div id="all" class="col-6 box"></div>
+        <div id="filtered" class="col-6 box"></div>
+    </div>
+
+{% endblock %}

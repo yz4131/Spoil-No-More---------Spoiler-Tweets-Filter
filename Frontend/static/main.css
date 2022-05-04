@@ -1,0 +1,39 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+#switch_button{
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: x-large;
+    width: auto;
+    cursor: pointer;
+    margin: 20px 0 20px 40%;
+}
+
+.title{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.box{
+    padding: 10px 30px;
+}
+
+.content{
+    border-color: lightskyblue;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: lavenderblush;
+}
+
+.home_text{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-top: 200px;
+}
