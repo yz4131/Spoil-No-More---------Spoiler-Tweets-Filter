@@ -10,8 +10,8 @@ class TweetsListener(Stream):
 
     def on_data(self, data):
         session = boto3.Session(
-            aws_access_key_id='',
-            aws_secret_access_key=''
+            aws_access_key_id='AKIASSEASMETEHFUW4PK',
+            aws_secret_access_key='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'
         )
         sqs = session.client('sqs', region_name='us-east-1')
         try:
@@ -43,10 +43,10 @@ class TweetsListener(Stream):
 
     
 def getData(tags):
-    ACCESS_TOKEN = ''
-    ACCESS_SECRET = ''
-    CONSUMER_KEY = ''
-    CONSUMER_SECRET = ''
+    ACCESS_TOKEN = '1447405981948948480-asMA8owv21PSE1dv3TjpYmOwXFLYNR'
+    ACCESS_SECRET = 'XosM3oENMLpq63UwHExVjcOveWL09ATBWgNong2Ic8NS0'
+    CONSUMER_KEY = 'cpHYYsLFwQVe8RA4rqjAWZzNT'
+    CONSUMER_SECRET = 'HVvyBU30b75WBp8GuBr9sY8hwqXV9OKGY35N3zILNGVwrvfpa7'
 
     twitter_stream = TweetsListener(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET)
     twitter_stream = twitter_stream.filter(track=tags,languages=['en'])
