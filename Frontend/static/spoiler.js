@@ -10,7 +10,7 @@ async function fetchSpoiler() {
 }
 
 async function streaming() {
-    if (stream == true) {
+    while (stream == true) {
         let tweet = JSON.parse(await fetchSpoiler())
         console.log(tweet["data"])
         console.log(tweet["labels"])
@@ -45,7 +45,7 @@ function startStreaming() {
         stopStreaming()
     })
     stream = true
-    setInterval(function(){streaming()}, 3000)
+    streaming()
 }
 
 $(document).ready(function(){

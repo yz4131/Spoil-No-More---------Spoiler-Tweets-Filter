@@ -4,12 +4,16 @@ body{
 
 #switch_button{
     border-radius: 10px;
-    background-color: cornflowerblue;
-    color: white;
+    border-color: aliceblue;
+    background-color: lightskyblue;
+    color: dodgerblue;
     font-size: x-large;
     width: auto;
     cursor: pointer;
     margin: 20px 0 20px 40%;
+}
+#switch_button:active, #switch_button:focus{
+    outline-color: dodgerblue;
 }
 
 .title{
