@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e22b3666-bae9-43ed-bca9-d83f9e831c06" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Backend/spoiler-detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Backend/spoiler-detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getTweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/getTweets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

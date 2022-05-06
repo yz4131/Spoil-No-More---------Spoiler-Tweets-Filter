@@ -15,11 +15,11 @@ class TweetsListener(Stream):
         )
         sqs = session.client('sqs', region_name='us-east-1')
         try:
-            time.sleep(2)
+            time.sleep(1)
             msg = json.loads(data)
             print('TWEETS:{}\n'.format(msg['text']))
             response = sqs.send_message(
-                QueueUrl='https://sqs.us-east-1.amazonaws.com/176363299110/streaming',
+                QueueUrl='https://sqs.us-east-1.amazonaws.com/176363299110/tweets',
                 DelaySeconds=1,
                 MessageAttributes={
                     'Tweets': {
@@ -41,7 +41,7 @@ class TweetsListener(Stream):
         print(status)
         return False
 
-    
+
 def getData(tags):
     ACCESS_TOKEN = ''
     ACCESS_SECRET = ''
@@ -59,6 +59,8 @@ class twitter_client:
 
 
 if __name__ == '__main__':
-    tags = ['#Moon Knight', 'Moon Knight', 'MoonKnight', 'Batman', 'Morbius']
+    tags = ['batman', 'moonknight', 'Morbius', 'fantasticbeasts', 'DoctorStrange', 'thebadguys', 'Ozark',
+            'halo', 'theNorthman', 'uncharted', 'Spiderman', 'JurassicWorld', 'theLostCity', 'Aquaman', 'MrsMaisel',
+            'WandaVision', 'Spoiler', 'Avatar', 'imdb']
     client = twitter_client()
     client.run_client(tags)
