@@ -3,8 +3,8 @@ async function fetchSpoiler() {
     .then(response=>response.text())
     .then(data=>data)
     console.log(tweet)
-    if (tweet == "Not Found") {
-        let tweet = await fetchSpoiler()
+    if (tweet == "Not Found" && stream == true) {
+        tweet = await fetchSpoiler()
     }
     return tweet
 }

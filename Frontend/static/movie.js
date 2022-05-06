@@ -3,8 +3,8 @@ async function fetchMovie() {
     .then(response=>response.text())
     .then(data=>data)
     console.log(tweet)
-    if (tweet == "Not Found") {
-        let tweet = await fetchMovie()
+    if (tweet == "Not Found" && stream == true) {
+        tweet = await fetchMovie()
     }
     return tweet
 }
